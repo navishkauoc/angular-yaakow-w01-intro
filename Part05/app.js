@@ -2,7 +2,9 @@
 //     'use strict';
 
 //     angular.module('DIApp', [])
-//     .controller('DIController',DIController);
+//     .controller('DIController', DIController);
+
+//     DIController.$inject = ['$scope', '$filter'];
 
 //     function DIController($scope,$filter){
 //         $scope.name = "Navishka";
@@ -14,4 +16,4 @@
 //     }
 // })();
 
-!function(){"use strict";angular.module("DIApp",[]).controller("DIController",function(n,e){n.name="Navishka",n.upper=function(){var a=e("uppercase");n.name=a(n.name)}})}();
+!function(){"use strict";function e(e,n){e.name="Navishka",e.upper=function(){var r=n("uppercase");e.name=r(e.name)}}angular.module("DIApp",[]).controller("DIController",e),e.$inject=["$scope","$filter"]}();
